@@ -1,7 +1,144 @@
 /* style.css */
+/* style.css */
+
+/* 1. Tus colores guardados como variables */
+:root {
+    --primary: #002E5D;
+    --secondary: #6C757D;
+    --tertiary: #E9ECEF;
+    --neutral: #F8F9FA;
+    --white: #FFFFFF;
+}   
+
+{
+        box-sizing: border-box;
+            margin: 0;
+                padding: 0;
+                }
+
+      body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: var(--neutral);
+    color: var(--secondary);
+    padding: 40px 20px;
+}
 
 .grid-layout {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px; /
+    align-items: start;
 }
 
+.columna {
+    display:flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.card {
+    background-color:#F8F9FA;
+    border-radius: 1px; solid var(--tertiary);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+}
+
+.card-header {
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    font-size: 14px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+}
+
+.arriba {
+    margin-bottom: 16px;  
+}
+
+label {
+    display:block
+    font-size: 14px;
+    color: var(--secondary);
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--neutral);
+    border: 1px solid var(--tertiary);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+     outline: none;
+        border-color: var(--primary);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.input-group-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.map-card {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--tertiary);
+}
+
+.map-placeholder {
+    background-color: #4b6574;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+}
+
+.location-btn {
+    background-color: var(--white);
+    color: var(--primary);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.submit-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.disclaimer-text {
+    display: block;
+    text-align: center;
+    color: var(--secondary);
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 16px;
+}
 
