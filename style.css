@@ -45,6 +45,13 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
 }
 
+header h1 {
+    color: var(--primary);
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
 .card-header {
     display:flex;
     align-items: center;
@@ -54,16 +61,19 @@
 
 .card-header h2 {
     font-size: 14px;
+    color: var(--primary); 
+    font-weight: 700;
     text-transform:uppercase;
     letter-spacing: 1px;
 }
+
 
 .arriba {
     margin-bottom: 16px;  
 }
 
 label {
-    display:block
+    display:block;
     font-size: 14px;
     color: var(--secondary);
     margin-bottom: 6px;
